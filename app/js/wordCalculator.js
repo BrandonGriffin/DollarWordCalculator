@@ -35,7 +35,7 @@
             var total = 0;
             var formattedWord = word.toUpperCase();
             for (var i = 0; i < formattedWord.length; i++){
-            	total += letterValues[formattedWord[i]];
+                total += letterValues[formattedWord[i]];
             }
 
             return formatValue(total.toString());
@@ -50,10 +50,17 @@
 				return "$." + value;
 			else
 				return "$" + value.slice(0, value.length-2) + "." + value.slice(value.length-2);
-	};
+        };
+
+        var colorValue = function (value) {
+            if (value == "$1.00") {
+                return "#88C53F";
+            }
+        };
 
         return {
-        	calculate: calculate
+            calculate: calculate,
+            colorValue: colorValue
         };
 	};
 

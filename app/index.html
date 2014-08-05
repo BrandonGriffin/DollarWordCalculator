@@ -9,7 +9,15 @@
 	<h1>$ Word Calculator</h1>
 	<div class="main-div" ng-controller="MainCtrl">
 		<input type="text" ng-model="word" ng-change="wordChange()"/>
-		<div class="word-value">{{wordValue}}</div>
+		<div class="word-value" ng-style="{color : wordColor}">{{wordValue}}</div>
+
+        <div>
+            <ul class="dollarWords">
+                <li class="animate-repeat" ng-repeat="dollarWord in dollarWords">
+                    {{dollarWord}}
+                </li>
+            </ul>
+        </div>
 		
 		<script src="lib/angular.js"></script>
 		<script src="js/app.js"></script>

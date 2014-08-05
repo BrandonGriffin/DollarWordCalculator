@@ -1,12 +1,12 @@
 body {
-	background-color:#485A75;
+	background-color:#0066a2;
 
 }
 
 h1 {
 	font-family: 'Sansita One', cursive;
 	font-size: 72px;
-	color: #8AB50D;
+	color: #88C53F;
 	text-align: center;
 }
 
@@ -28,4 +28,15 @@ input {
 	font-size: 150px;
 	text-align: center;
 
+}
+
+ul {
+    list-style-type: none;
+}
+
+.dollarWords {
+    font-family: 'Sansita One', cursive;
+	font-size: 30px;
+	text-align: center;
+    color: #88C53F;
 }
